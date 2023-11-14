@@ -6,7 +6,7 @@
 #    By: akambou <akambou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/11 22:13:50 by akambou           #+#    #+#              #
-#    Updated: 2023/11/14 09:34:00 by akambou          ###   ########.fr        #
+#    Updated: 2023/11/14 09:50:23 by akambou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,33 +28,33 @@ OBJ_BONUS = $(addprefix $(OBJ_DIR), $(BONUS:.c=.o))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "Creating library ⌛⌛"
+	@echo "Creating library 🔨"
 	@ar rcs $(NAME) $(OBJ) > /dev/null
 	@ranlib $(NAME) > /dev/null
-	@echo "Library created  ✅✅."
+	@echo "Library created✅."
 
 bonus: $(OBJ_BONUS)
-	@echo "Creating bonus library ⌛⌛"
+	@echo "Creating bonus library 🔨"
 	@ar rcs $(NAME) $(OBJ_BONUS) > /dev/null
 	@ranlib $(NAME) > /dev/null
 	@touch $@
-	@echo "Bonus library created  ✅✅."
+	@echo "Bonus library created✅."
 
 $(OBJ_DIR)%.o : %.c Makefile $(INCL)
 	@mkdir -p $(OBJ_DIR)
-	@echo "Compiling $< ⌛⌛"
+	@echo "Compiling $< 🔨"
 	@$(CC) $(CFLAGS) -c $< -o $@ > /dev/null
-	@echo "Compiled $<  ✅✅."
+	@echo "Compiled $<✅."
 
 clean:
-	@echo "Cleaning object files ⌛⌛"
+	@echo "Cleaning object files 🔨"
 	@rm -rf $(OBJ_DIR) > /dev/null
-	@echo "Cleaned object files  ✅✅."
+	@echo "Cleaned object files✅."
 
 fclean: clean
-	@echo "Cleaning library ⌛⌛"
+	@echo "Cleaning library 🔨"
 	@rm -rf $(NAME) > /dev/null
-	@echo "Cleaned library  ✅✅."
+	@echo "Cleaned library✅."
 
 re: fclean all
 
