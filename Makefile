@@ -21,7 +21,8 @@ INCL = includes/libft.h
 OBJ_DIR = obj/
 OBJS = $(SRCS:%.c=$(OBJ_DIR)%.o)
 SRCS = $(wildcard src/alloc/*.c src/chars/*.c src/lists/*.c \
-src/memory/*.c src/numbers/*.c src/strings/*.c src/files/*.c)
+src/memory/*.c src/numbers/*.c src/strings/*.c src/files/*.c \
+src/printf/*.c)
 
 $(OBJ_DIR)%.o: %.c
 	@mkdir -p $(@D)

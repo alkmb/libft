@@ -26,6 +26,8 @@
 # include <unistd.h>
 # include <limits.h>
 # include <fcntl.h>
+# include <stdarg.h>
+
 
 typedef struct s_list
 {
@@ -88,5 +90,13 @@ int		ft_lstsize(t_list *lst);
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+/*-------------------------------PRINTF-----------------------------------*/
+int		ft_printf(const char *str, ...);
+int		ft_char_len(char c, int *len);
+int		ft_str_len(char *str, int *len);
+int		ft_nbr(int nbr, int *len);
+int		ft_ptr(unsigned long ptr, int *len);
+int		ft_hex(unsigned int nbr, int *len, const char *base);
+int		ft_unsint(unsigned int nbr, int *len);
 
 #endif
