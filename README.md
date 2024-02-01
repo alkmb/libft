@@ -4,16 +4,16 @@
     Project Name: Custom C Library (42 Project)
       Purpose: Enhance C programming capabilities.
 - Key Features:
-    Memory Manipulation:
-      Custom functions for memory allocation and freeing.
-    Type Conversion:
-      Seamless transformation of arguments into integers and other types.
-  String Handling:
-      Comprehensive string manipulation functions, including concatenation, splitting, and copying.
-  List and Structure Operations:
-      Specialized functions for managing linked lists and structures.
-  Numeric Operations:
-      Efficient handling of numeric values, including conversions and specialized algorithms.
+    -Memory Manipulation:
+          Custom functions for memory allocation and freeing.
+    -Type Conversion:
+          Seamless transformation of arguments into integers and other types.
+      -String Handling:
+          Comprehensive string manipulation functions, including concatenation, splitting, and copying.
+      -List and Structure Operations:
+          Specialized functions for managing linked lists and structures.
+      -Numeric Operations:
+          Efficient handling of numeric values, including conversions and specialized algorithms.
 
 ## Directory Structure
 
