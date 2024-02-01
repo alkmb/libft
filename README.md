@@ -2,6 +2,7 @@
 
 This is a comprehensive C library providing a set of functions for various tasks, including memory manipulation, type conversion, string manipulation, list/structure operations, and more. Below is an overview of the different categories of functions available in this library.
 
+
 ## Directory Structure
 
 libft/
