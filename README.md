@@ -1,19 +1,6 @@
-#Custom C Library Presentation
+#Libft Presentation
 
-- Overview:
-    Project Name: Custom C Library (42 Project)
-      Purpose: Enhance C programming capabilities.
-- Key Features:
-    -Memory Manipulation:
-          Custom functions for memory allocation and freeing.
-    -Type Conversion:
-          Seamless transformation of arguments into integers and other types.
-      -String Handling:
-          Comprehensive string manipulation functions, including concatenation, splitting, and copying.
-      -List and Structure Operations:
-          Specialized functions for managing linked lists and structures.
-      -Numeric Operations:
-          Efficient handling of numeric values, including conversions and specialized algorithms.
+This library offers essential functionalities, such as memory manipulation, type conversion, string handling, list operations, and more.
 
 ## Directory Structure
 
